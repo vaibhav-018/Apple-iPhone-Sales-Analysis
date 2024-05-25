@@ -19,5 +19,11 @@ print(highest_rated [ 'Product Name'])
 
 # Number of rating of highest rated iphone on flipkart
 
+iphone = highest_rated [ "Product Name" ].value_counts()
+labels = iphones.index
+counts = highest_rated[ "Number of Ratings" ]
+figure = px.bar(highest-rated, x= labels, y = counts, title = "Number of ratings of highest rated iPhones")
+figure.show()
+
 
 
