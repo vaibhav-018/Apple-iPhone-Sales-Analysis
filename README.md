@@ -21,9 +21,23 @@ print(highest_rated [ 'Product Name'])
 
 iphone = highest_rated [ "Product Name" ].value_counts()
 labels = iphones.index
-counts = highest_rated[ "Number of Ratings" ]
+counts = highest_rated[ "Number Of Ratings" ]
 figure = px.bar(highest-rated, x= labels, y = counts, title = "Number of ratings of highest rated iPhones")
 figure.show()
+
+# Number of rating of highest rated iphone on flipkart
+
+iphone = highest_rated [ "Product Name" ].value_counts()
+labels = iphones.index
+counts = highest_rated[ "Number Of Reviews" ]
+figure = px.bar(highest-rated, x= labels, y = counts, title = "Number of Reviews of highest rated iPhones")
+figure.show()
+
+# Scatter Plot
+
+figure = px.scatter( data_frame= data, x= "Number Of Ratings", y= "Sale Price", size= "Discount Percentage", trendline= "ols", title= "Relationship between sale price and number of ratings")
+figure.sho()
+
 
 
 
